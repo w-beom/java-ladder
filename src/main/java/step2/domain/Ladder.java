@@ -42,4 +42,15 @@ public class Ladder {
     public int getLadderRowSize() {
         return lines.size();
     }
+
+    public void getResultOfMember(int memberIndex) {
+        int lineIndex = 0;
+        while (isEndGame(lineIndex)) {
+            lines.get(lineIndex).move(memberIndex);
+        }
+    }
+
+    private boolean isEndGame(int lineIndex) {
+        return lineIndex == lines.size();
+    }
 }

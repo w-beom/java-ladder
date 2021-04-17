@@ -56,4 +56,8 @@ public class Line {
     public int getLineSize() {
         return points.size();
     }
+
+    public void move(int memberIndex) {
+
+    }
 }
